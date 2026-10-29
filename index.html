@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roster Ujian</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">📚 RosterKu</div>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#jadwal">Jadwal Ujian</a>
+    </nav>
+</header>
+
+<section class="hero" id="beranda">
+    <div>
+        <p class="label">JADWAL AKADEMIK</p>
+        <h1>Persiapkan ujianmu,<br>
+            raih hasil <span>terbaik!</span></h1>
+        <p class="description">
+            Lihat jadwal ujian dengan mudah agar kamu
+            tidak lupa waktu dan mata pelajaran.
+        </p>
+        <a href="#jadwal" class="button">Lihat Jadwal ↓</a>
+    </div>
+
+    <div class="hero-icon">📝</div>
+</section>
+
+<main id="jadwal">
+    <div class="heading">
+        <p class="label">JANGAN SAMPAI TERLEWAT</p>
+        <h2>Roster Ujian</h2>
+        <p>Contoh jadwal ujian sekolah</p>
+    </div>
+
+    <div class="info">
+        <div class="info-card">
+            <span>📅</span>
+            <div>
+                <small>Jumlah hari</small>
+                <h3 id="jumlahHari">5 Hari</h3>
+            </div>
+        </div>
+        <div class="info-card">
+            <span>📖</span>
+            <div>
+                <small>Mata pelajaran</small>
+                <h3 id="jumlahMapel">10 Mapel</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="tools">
+        <input type="text" id="searchInput"
+            placeholder="Cari mata pelajaran...">
+
+        <button id="printBtn" class="print-button">
+            🖨 Cetak Roster
+        </button>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Hari / Tanggal</th>
+                    <th>Waktu</th>
+                    <th>Mata Pelajaran</th>
+                    <th>Catatan</th>
+                </tr>
+            </thead>
+            <tbody id="jadwalBody"></tbody>
+        </table>
+    </div>
+
+    <p id="emptyMessage" hidden>
+        Jadwal tidak ditemukan.
+    </p>
+
+    <div class="note">
+        <strong>💡 Tips ujian</strong>
+        <p>Belajar secara teratur, siapkan alat tulis,
+        dan datang ke sekolah tepat waktu.</p>
+    </div>
+</main>
+
+<footer>
+    <h3>📚 RosterKu</h3>
+    <p>Belajar teratur, ujian lebih siap.</p>
+    <small>© 2026 RosterKu</small>
+</footer>
+
+</body>
+</html>
